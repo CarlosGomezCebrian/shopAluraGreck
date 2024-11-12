@@ -1,0 +1,11 @@
+{
+  "variablesPermitidas":[
+  {
+    "dbUpdateProductsJ": "./js/updateProducts.json",
+    "dbUpdateStockJ": "./js/updateStock.json",
+    "dbUpdateDialogJ": "./js/updateDialog.json",
+    "dbproductosJ": "./js/content.json",
+    "phoneNumber": "52 33259-12512",
+    "phoneWhatsapp": "523325912512"
+  }
+]}

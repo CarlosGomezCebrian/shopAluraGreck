@@ -1,0 +1,14 @@
+{
+  "name": "carloshop",
+  "version": "1.0.0",
+  "description": "aplicacion de venta de productos",
+  "main": "indexStore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

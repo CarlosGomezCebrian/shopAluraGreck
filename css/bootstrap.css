@@ -1,0 +1,34 @@
+@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src: url("./fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf") format("woff2"),
+url("./fonts/bootstrap-icons.woff?8d200481aa7f02a2d63a331fc782cfaf") format("woff");
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bi-arrow-left-square-fill::before { content: "\f12d"; }
+.bi-arrow-return-left::before { content: "\f131"; }
+.bi-bag-fill::before { content: "\f174"; }
+.bi-emoji-frown::before { content: "\f31d";}
+.bi-geo-alt-fill::before { content: "\f3e7"; }
+.bi-hand-index-thumb-fill::before { content: "\f401"; }
+.bi-hand-index-thumb::before { content: "\f402"; }
+.bi-list::before { content: "\f479"; }
+.bi-trash-fill::before { content: "\f5dd";}
+.bi-whatsapp::before { content: "\f618"; }
+.bi-x::before { content: "\f62a"; }
+.bi-plus::before { content: "\f4fe"; }
+.bi-search::before {content: "\F52A";}

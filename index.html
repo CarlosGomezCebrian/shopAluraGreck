@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+  <meta charset=UTF-8 />
+  <meta http-equiv=X-UA-Compatible content="IE=edge" />
+  <meta name=viewport content="width=device-width, initial-scale=1.0" />
+  <title>CarlOSHop</title>
+  <meta name=description
+    content="Pagina de tienda en linea con venta de  productos para el hogar, cuidado personal y ropa" />
+  <meta property=og:url content=https://cgshop.cgwis.com />
+  <meta property=og:type content=website />
+  <meta property=og:title content=CarlOSHop />
+  <meta property=og:description
+    content="Pagina de tienda en linea con venta de  productos para el hogar, cuidado personal y ropa" />
+  <meta property=og:image content=https://cgshop.cgwis.com/img/shop/carlosshop400.png />
+  <meta name=twitter:card content=summary_large_image />
+  <meta property=twitter:domain content=cgshop.cgwis.com />
+  <meta property=twitter:url content=https://cgshop.cgwis.com />
+  <meta name=twitter:title content=CarlOSHop />
+  <meta name=twitter:description
+    content="Pagina de tienda en linea con venta de  productos para el hogar, cuidado personal y ropa" />
+  <meta name=twitter:image content=https://cgshop.cgwis.com/img/shop/carlosshop400.png />
+  <link rel=canonical href=https://cgshop.cgwis.com />
+  <link rel=icon href=./img/shop/favicon.png type=image/x-icon sizes=192x192 />
+  <link rel=stylesheet href=./css/bootstrap.css />
+  <link rel=stylesheet href=./css/toastify.css />
+  <link rel=stylesheet href=./css/store.css?version=1 />
+  <script type=application/ld+json>
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "CarlOSHop",
+          "url": "https://cgshop.cgwis.com",
+          "logo": "https://cgshop.cgwis.com/img/shop/carlosshop400.png",
+          "description": "Tienda en línea con venta de productos para el hogar, cuidado personal y ropa"
+        }
+        </script>
+</head>
+
+<body>
+  <div class=wrapper>
+    <header class=header-mobile><img class=logoMobile src=./img/shop/carlosshop400.png alt="Logo foto"
+        width=100px /><select name="Seleccionar categoria mobile" class=select-mobile id=select-mobile
+        title="Selecciona una categoria">
+        <option class=selectPrincipal value=todos>Todos los productos</option>
+        <option class=selectPrincipal value=Hogar>Hogar</option>
+        <option value=Baño>Hogar /Baño</option>
+        <option value=Casa>Hogar /Casa</option>
+        <option value=Cocina>Hogar /Cocina</option>
+        <option value=Personal>Hogar /Personal</option>
+        <option value=Peques>Hogar /Peques</option>
+        <option class=selectPrincipal value=Ropa>Ropa</option>
+        <option value=Caballero>Ropa /Caballero</option>
+        <option value=Dama>Ropa /Dama</option>
+        <option value=Kids>Ropa /Kids</option>
+      </select><a class="open-menu bolsa" href=./shoppingBag.html title="Click ir a Mi Bolsa"><i
+          class="bi bi-bag-fill MobileBag"><span id=mobileNumber class=mobileNumber>0</span></i></a> <button
+        class="open-menu list" id=open-menu title="Click Abrir menú"><i class="bi bi-list"></i></button></header>
+    <aside><button class=close-menu id=close-menu title="Click Cerrar menú"><i class="bi bi-x"></i></button>
+      <header><a href=./index.html class=logo><img class=logo-img src=./img/shop/carlosshop400.png alt="Logo foto"
+            width=100px /></a></header>
+      <nav>
+        <ul class=menu>
+          <li><button id=todos class="boton-menu button-category active" title="Click Abrir Todos Los Productos"><i
+                class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button></li>
+          <li><button id=Hogar class="boton-menu button-category" title="Click Abrir Productos Hogar"><i
+                class="bi bi-hand-index-thumb"></i>Hogar</button></li>
+          <li><button id=Ropa class="boton-menu button-category" title="Click Abrir Productos Ropa"><i
+                class="bi bi-hand-index-thumb"></i>Ropa</button></li>
+          <li><a class="boton-menu boton-carrito" href=./shoppingBag.html title="Click ir a Mi Bolsa"><i
+                class="bi bi-bag-fill"></i> Mi Bolsa <span id=number class=number>0</span></a></li>
+        </ul>
+      </nav>
+      <footer style="display: flex;justify-content: space-around;"><a class=texto-footer
+          href=https://carlosgomezportafolio.cgwis.com target=_blank title="Ir a pagina Carlos Gomez"><img
+            src=./img/shop/CGlogo192x192.png alt="imagen de carlos gomez portafolio icon" width=40 /></a><button
+          title="Agregar productos"
+          style="background-color: var(--clr-main-light);color: var(--clr-gray);border: none;border-radius: 50%;padding: .5rem;font-size: 1.5rem;"><i
+            class="bi bi-plus"></i></button>
+      </footer>
+    </aside>
+    <main class=main-fijo>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
+        <select class=select-main name="Seleccionar categoria mobile" id=select-main title="Selecciona una categoria">
+          <option class=selectPrincipal value=todos>Todos los productos</option>
+          <option class=selectPrincipal value=Hogar>Hogar</option>
+          <option value=Baño>Hogar /Baño</option>
+          <option value=Casa>Hogar /Casa</option>
+          <option value=Cocina>Hogar /Cocina</option>
+          <option value=Personal>Hogar /Personal</option>
+          <option value=Peques>Hogar /Peques</option>
+          <option class=selectPrincipal value=Ropa>Ropa</option>
+          <option value=Caballero>Ropa /Caballero</option>
+          <option value=Dama>Ropa /Dama</option>
+          <option value=Kids>Ropa /Kids</option>
+        </select>
+        <div class=searchDiv-main style="display: flex;">
+          <input type="search" class=search-main placeholder=" Buscar..." id="buscar" data-busqueda>
+          <span class=searchBtn-main><i class="bi bi-search"></i></span>
+        </div>
+      </div>
+      <h1 class=main-title id=main-title></h1>
+      <div id=product-container class=product-container></div>
+    </main>
+  </div>
+  <script type=module src=./js/indexStore.js></script>
+  <script src=./js/toastify.js defer></script>
+</body>
+
+</html>
