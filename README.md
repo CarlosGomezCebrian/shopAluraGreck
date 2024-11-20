@@ -20,3 +20,4 @@ Esta es una tienda en línea creada con HTML, CSS, JavaScript y Node.js con la b
 ## Instalación
 
 1. **Clona el repositorio:**
+2. Una vez instalado usa esta línea para conectar con el Json **npx json-server --watch dbProductos.json --port 3001**
