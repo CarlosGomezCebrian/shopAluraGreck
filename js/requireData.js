@@ -1,5 +1,5 @@
-import { showLoader, hideLoader } from "./loader.js";
-let productsDialog = [];
+import { showLoader } from "./loader.js";
+//let productsDialog = [];
 let updatedproducts = [];
 
 let data;
@@ -52,8 +52,6 @@ function updateProduct() {
         updatedproducts = data;
         const dataLoadedEvent = new Event("dataLoaded");
         document.dispatchEvent(dataLoadedEvent);
-        //updateDialog();
-        //hideLoader();
       })
       .catch((error) => {
         console.error("Se produjo un error:", error);
@@ -63,34 +61,4 @@ function updateProduct() {
       });
   }, 100);
 }
-/* 
-function updateDialog() {
-  if (!data) {
-    console.error("Error: Los datos no están disponibles.");
-    return;
-  }
-  let url = data[0].dbUpdateProducts;
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Error de red: " + response.status);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      productsDialog = data;
-      const dataLoadedEvent = new Event("dataLoaded");
-      document.dispatchEvent(dataLoadedEvent);
-    })
-    .catch((error) => {
-      console.error("Se produjo un error:", error);
-    });
-}
-const mainTitle = document.querySelector("#main-title");
-function showErrorMessage(message) {
-  mainTitle.style.display = "block";
-  mainTitle.innerText = message;
-  hideLoader();
-}*/
-//export { productsDialog };
 export { updatedproducts };

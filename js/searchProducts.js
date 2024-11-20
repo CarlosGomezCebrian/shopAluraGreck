@@ -1,17 +1,13 @@
 import { updatedproducts } from "./requireData.js";
 import { uploadProducts, showErrorMessage } from "./main.js";
 const imputSearch = document.querySelector("[data-busqueda]");
-console.log("imputSearch", imputSearch);
 
-document.addEventListener("dataLoaded", function () {
-  console.log("desde search", updatedproducts);
-});
+document.addEventListener("dataLoaded", function () {});
 
 function searchProducts() {
   const imputSearchValue = document
     .querySelector("[data-busqueda]")
     .value.toLowerCase();
-  console.log("inputSearchValue", imputSearchValue);
   const wordSearchProduct = updatedproducts.filter((product) => {
     return (
       (product.descripcion &&

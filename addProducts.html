@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=icon href=./img/shop/favicon.png type=image/x-icon sizes=192x192 />
+  <link rel="stylesheet" href="./css/addProducts.css">
+  <title>AddProducts</title>
+</head>
+
+<body>
+  <main>
+    <div class="divBtns">
+      <button id="borrar" class="formulario__boton">Borrar</button>
+      <a href="./index.html" class="formulario__boton">Regresar</a>
+    </div>
+    <form class="form" data-formulario>
+      <h1>Ingresa Nuevo Producto</h1>
+      <div class="divInput">
+        <label>Código del producto</label>
+        <input name="codigo" type="text" class="input" placeholder="Ej. 21034" required data-codigo>
+      </div>
+      <div class="divInput">
+        <label>Descripción del producto</label>
+        <input type="text" class="input" placeholder="Ej. Organicajon" required data-descripcion>
+      </div>
+      <div class="divInput">
+        <label>URL de la imagen</label>
+        <input type="url"
+          placeholder="Ej. https://betterware.com.mx/cdn/shop/files/21034-1-Organicajon-Betterware_1680x.png?v=1713988312"
+          required data-url>
+      </div>
+      <div class="divInput">
+        <label>Categoría</label>
+        <select data-categoria title="Selecciona una categoria" required>
+          <option class=selectPrincipal disabled selected value="">Selecciona una categoría</option>
+          <option class=selectPrincipal value="Hogar">Hogar</option>
+          <option class=selectPrincipal value="Ropa">Ropa</option>
+        </select>
+      </div>
+      <div class="divInput">
+        <label>Subcategoría</label>
+        <select data-subcategoria title="Selecciona una Subcategoría" required disabled>
+          <option class=selectPrincipal disabled selected value="">Selecciona una Subcategoría</option>
+        </select>
+      </div>
+      <div class="divInput">
+        <label>Cantidad disponible</label>
+        <input class="input" type="number" min="1" placeholder="Ej.  1, 2, 3" required data-cantidad>
+      </div>
+      <div class="divInput">
+        <label>Precio</label>
+        <input class="input" type="number" min="0" placeholder="Ej. 80" required data-precio>
+      </div>
+      <div class="divInput">
+        <label>Descuento</label>
+        <input class="input" type="number" value="0" min="0" max="100" placeholder="Ej. 10, 20, o 0" data-descuento>
+      </div>
+      <div class="divInput">
+        <label>Descripción enriquecida.</label>
+        <textarea class="input" id="text"
+          placeholder="Ej. Maximiza cada rincón de tu refrigerador manteniendo los espacios organizados para frutas y verduras. Utiliza los divisores del Organi Cajón para contar con un mejor acomodo."
+          data-descripcionCompleta></textarea>
+      </div>
+      <div class="divInput">
+        <label>Materiales</label>
+        <input class="input" type="text" name="materiales"
+          placeholder="Ej. Polipropileno. Soporta: 1.2 kg. 24 x 9 x 14 cm. Incluye dos divisores." data-materiales>
+      </div>
+      <input class="formulario__boton" type="submit" name="btn" />
+    </form>
+
+  </main>
+  <script type="module" src="js/formProduct.js"></script>
+</body>
+
+</html>
